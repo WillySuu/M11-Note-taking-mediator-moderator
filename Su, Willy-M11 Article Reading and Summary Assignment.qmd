@@ -1,0 +1,106 @@
+---
+title: "M11 Article Reading and Summary: Mediator and Moderator Variables"
+author: "Willy Su"
+date: "2026-11-11"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    number-sections: true
+    code-fold: true
+    embed-resources: true
+execute:
+  echo: false
+---
+
+## Introduction
+
+Baron and Kenny (1986) explain why researchers should distinguish **moderator** variables from **mediator** variables. Both help explain relationships between predictors and outcomes, but they answer different questions. A moderator identifies **when or for whom** an effect changes; a mediator describes **how or why** an effect may occur. Confusing these roles can lead to inappropriate models and interpretations.
+
+## Moderator Variables
+
+A **moderator** changes the strength or direction of the relationship between an independent variable (X) and a dependent variable (Y). It may be categorical (such as a participant group) or continuous (such as experience). Moderation is typically examined by testing an **interaction** between the predictor and the proposed moderator.
+
+For example, the association between website information quality (X) and consultation intention (Y) might differ between adult patients and parents (W). Here, audience segment would be a moderator if the X–Y relationship varies across segments.
+
+### Testing moderation
+
+A common regression specification is:
+
+$$
+Y = b_0 + b_1 X + b_2 W + b_3(XW) + \varepsilon
+$$
+
+The interaction coefficient $b_3$ is central to the moderation hypothesis. A statistically significant interaction suggests that the relationship between X and Y depends on W. Researchers should interpret the interaction using conditional effects or a plot, rather than interpreting the main effects in isolation.
+
+## Mediator Variables
+
+A **mediator** is a variable proposed to transmit or account for an effect of X on Y. Mediation addresses the process connecting the predictor and outcome. Baron and Kenny (1986) discuss a sequence of regression relationships to evaluate a proposed mediating mechanism.
+
+For example, better website information quality (X) might increase perceived trust (M), which in turn could increase consultation intention (Y). Trust is the proposed mediator because it offers a possible explanation for the association.
+
+### Classic regression approach
+
+The classic framework considers whether:
+
+1. X predicts Y (the total association in the traditional steps).
+2. X predicts the proposed mediator M.
+3. M predicts Y when X is included in the model.
+4. The X–Y association is reduced after accounting for M; complete mediation was discussed as the case in which the remaining direct association is no longer evident.
+
+These steps describe the **historical Baron–Kenny approach**, not a universal modern requirement. In particular, a significant total effect is **not necessary** for an indirect effect to exist. Modern practice often estimates the indirect effect $ab$ directly and uses bootstrap confidence intervals, while carefully assessing causal assumptions.
+
+### Path notation
+
+$$
+M = i_M + aX + e_M
+$$
+
+$$
+Y = i_Y + c'X + bM + e_Y
+$$
+
+The proposed indirect effect is $ab$; $c'$ denotes the direct effect conditional on M. In a simple linear model under appropriate assumptions, the total effect can be expressed as $c = c' + ab$.
+
+## Moderator versus Mediator
+
+| Feature | Moderator | Mediator |
+|---|---|---|
+| Main question | When or for whom does X relate to Y? | How or why might X relate to Y? |
+| Conceptual role | Changes the X–Y relationship | Transmits or explains a proposed X–Y effect |
+| Common analysis | Interaction term ($X \times W$) | Paths $a$ and $b$, indirect effect $ab$ |
+| Marketing example | Parent versus adult audience segment | Perceived website trust |
+| Key caution | Interpret conditional effects | Association alone does not establish causation |
+
+## Important Insights from the Article
+
+- **Theory comes first.** A variable should not be labeled a mediator or moderator solely because of a statistical result; its hypothesized role needs a conceptual rationale.
+- **The questions differ.** Moderation concerns variation in an effect, whereas mediation concerns an explanatory process.
+- **Model specification matters.** The proposed relationships determine which regression equations and statistical tests are relevant.
+- **Causal interpretation requires caution.** Observational associations, even when consistent with a mediation model, do not by themselves prove the proposed causal mechanism.
+
+## Application to Digital Marketing Research
+
+The distinction is useful when studying how an orthodontic practice's website influences potential patients.
+
+**Possible mediation question:** Does perceived trust help explain the relationship between website information quality and consultation intention? The hypothesized sequence is information quality → trust → consultation intention.
+
+**Possible moderation question:** Is the relationship between website information quality and consultation intention different for adult patients versus parents? The proposed moderator is audience segment.
+
+These are **illustrative hypotheses**, not findings from collected data. They would require appropriate measurements, study design, and analysis before drawing conclusions.
+
+## Conclusion
+
+Baron and Kenny's (1986) article established a widely influential conceptual distinction between moderation and mediation. Moderators identify the conditions under which relationships vary; mediators propose mechanisms through which relationships operate. The distinction remains valuable for developing research questions and statistical models, even though mediation-testing recommendations have evolved beyond the article's original regression steps.
+
+## References
+
+Baron, R. M., & Kenny, D. A. (1986). The moderator–mediator variable distinction in social psychological research: Conceptual, strategic, and statistical considerations. *Journal of Personality and Social Psychology, 51*(6), 1173–1182. https://doi.org/10.1037/0022-3514.51.6.1173
+
+## Appendix: GitHub Links
+
+- **GitHub Repository:** [M11 Article Reading – Mediator/Moderator](https://github.com/WillySuu/M11-Article-Reading-Mediator-Moderator)
+- **GitHub Pages:** [Published HTML Report](https://willysuu.github.io/M11-Article-Reading-Mediator-Moderator/)
+
+*Note: These GitHub links are planned URLs and will work only after the repository is created and GitHub Pages is published with an `index.html` file.*
