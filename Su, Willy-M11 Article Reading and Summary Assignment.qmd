@@ -100,7 +100,8 @@ Baron, R. M., & Kenny, D. A. (1986). The moderator–mediator variable distincti
 
 ## Appendix: GitHub Links
 
-- **GitHub Repository:** [M11 Article Reading – Mediator/Moderator](https://github.com/WillySuu/M11-Article-Reading-Mediator-Moderator)
-- **GitHub Pages:** [Published HTML Report](https://willysuu.github.io/M11-Article-Reading-Mediator-Moderator/)
+- **GitHub Repository:** [M11 Article Reading – Mediator/Moderator](https://github.com/WillySuu/M11-Note-taking-mediator-moderator)
+
+- **GitHub Pages:** [Published HTML Report](https://willysuu.github.io/M11-Note-taking-mediator-moderator/)
 
 *Note: These GitHub links are planned URLs and will work only after the repository is created and GitHub Pages is published with an `index.html` file.*
